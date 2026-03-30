@@ -25,7 +25,7 @@ void main() {
   testWidgets('Cenário 3: A estrutura visual da aplicação carrega corretamente', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
     
-    // Verifica se o esqueleto principal (Scaffold) e o Center existem
+    // Verifica se o esqueleto principal (Scaffold) e o Center existem no ecrã
     expect(find.byType(Scaffold), findsOneWidget);
     expect(find.byType(Center), findsOneWidget);
   });
